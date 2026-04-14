@@ -29,7 +29,13 @@ const ITEMS = [
   },
   {
     id: "instagram", label: "INSTAGRAM", handle: "@fwwz_ayq", href: "https://www.instagram.com/fwwz_ayq/?__pwa=1", icon: "📷", barIcon: icon2, bars: 5, newBars: [1, 2],
-    links: ["instagram.com/fwwz_ayq/p/C4xQmRrNk2a", "instagram.com/fwwz_ayq/p/C3wLpBsOj7f", "instagram.com/fwwz_ayq/reel/C2vKoArMi6e", "instagram.com/fwwz_ayq/p/C1uJnZqLh5d", "instagram.com/fwwz_ayq/reel/C0tImYpKg4c"],
+    links: [
+      "instagram.com/reel/DUa5UMUCA4v",
+      "instagram.com/reel/DU0NtJYiK-x",
+      "instagram.com/reel/DWotQ4riK8U",
+      "instagram.com/reel/DUD4lDMiYk6",
+      "instagram.com/reel/DVQkF3TCB3B"
+    ],
     stats: [
       { tag: "FOL", value: "3.4K", color: "#e1306c" },
       { tag: "PST", value: "128",  color: "#f77737" },
