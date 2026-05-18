@@ -28,11 +28,11 @@ const ITEMS = [
     ],
   },
   {
-    id: "instagram", label: "INSTAGRAM", handle: "@fwwz_ayq", href: "https://www.instagram.com/fwwz_ayq/?__pwa=1", icon: "📷", barIcon: icon2, bars: 5, newBars: [1, 2],
+    id: "instagram", label: "INSTAGRAM", handle: "@fwwz_ayq", href: "https://www.instagram.com/fwwz_ayq/?__pwa=1", icon: "📷", barIcon: icon2, bars: 5, newBars: [0],
     links: [
+      "instagram.com/reel/DWotQ4riK8U",
       "instagram.com/reel/DUa5UMUCA4v",
       "instagram.com/reel/DU0NtJYiK-x",
-      "instagram.com/reel/DWotQ4riK8U",
       "instagram.com/reel/DUD4lDMiYk6",
       "instagram.com/reel/DVQkF3TCB3B"
     ],
