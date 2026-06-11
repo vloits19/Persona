@@ -20,8 +20,12 @@ const ROLES = [
 
 const ITEMS = [
   {
-    id: "itch", label: "PLATFORM", handle: "@vloits", href: "https://vloits.itch.io/", icon: "🎮", barIcon: icon1, bars: 1, newBars: [0],
-    links: ["vloits.itch.io/"],
+    id: "itch", label: "PLATFORM", handle: "@vloits", href: "https://vloits.itch.io/", icon: "🎮", barIcon: icon1, bars: 3, newBars: [0],
+    links: [
+      "vloits.itch.io/",
+      "vera-val.fayq.my.id/",
+      "vrakarya.fayq.my.id/"
+    ],
     stats: [
       { tag: "GAM", value: "3", color: "#fa5c5c" },
       { tag: "DL", value: "120",  color: "#ff9999" },
