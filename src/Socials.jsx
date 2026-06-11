@@ -21,6 +21,11 @@ const ROLES = [
 const ITEMS = [
   {
     id: "itch", label: "PLATFORM", handle: "@vloits", href: "https://vloits.itch.io/", icon: "🎮", barIcon: icon1, bars: 3, newBars: [0],
+    linkLabels: [
+      "vloits.itch.io/",
+      "VeraVal",
+      "Vrakarya"
+    ],
     links: [
       "vloits.itch.io/",
       "vera-val.fayq.my.id/",
@@ -583,7 +588,7 @@ export default function Socials() {
           )}
           <div className="sc-info-bar">
             <img className="sc-info-bar-icon" src={ITEMS[active].barIcon} alt="" />
-            <span className="sc-info-bar-text">{ITEMS[active].links[i]}</span>
+            <span className="sc-info-bar-text">{ITEMS[active].linkLabels ? ITEMS[active].linkLabels[i] : ITEMS[active].links[i]}</span>
           </div>
         </div>
       ))}
