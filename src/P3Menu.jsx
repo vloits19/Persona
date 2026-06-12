@@ -109,8 +109,7 @@ export default function P3Menu({ onNavigate }) {
           pointer-events: none;
         }
 
-        .p3-stripe  { position:absolute; right:0; top:0; bottom:0; width:5px; background:#c4001a; z-index:10; pointer-events:none; }
-        .p3-stripe2 { position:absolute; right:9px; top:0; bottom:0; width:2px; background:rgba(245,122,139,0.22); z-index:10; pointer-events:none; }
+
 
         .p3-menu {
           position: relative;
@@ -274,8 +273,6 @@ export default function P3Menu({ onNavigate }) {
           <span>Vloits</span>
           <span>persona</span>
         </div>
-        <div className="p3-stripe" />
-        <div className="p3-stripe2" />
 
         <nav className="p3-menu">
           {ITEMS.map((item, i) => {

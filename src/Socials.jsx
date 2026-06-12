@@ -541,10 +541,18 @@ export default function Socials() {
             key={item.id}
             className={`sc-bar-outer${active === i ? " active" : ""}${mounted ? " mounted" : ""}`}
             onClick={() => {
-              if (active === i) window.open(item.href, "_blank");
-              else setActive(i);
+              if (active === i) {
+                playConfirm();
+                window.open(item.href, "_blank");
+              } else {
+                setActive(i);
+                setFocus("left");
+              }
             }}
-            onMouseEnter={() => setActive(i)}
+            onMouseEnter={() => {
+              setActive(i);
+              setFocus("left");
+            }}
           >
             <div className="sc-bar-red" />
             <div className="sc-bar">
@@ -580,8 +588,16 @@ export default function Socials() {
           className={`sc-info-bar-wrap${activeInfoBar === i ? " selected" : ""}`}
           key={`bar-${active}-${i}`}
           style={{ top: `${155 + i * 52}px`, animationDelay: `${i * 50}ms` }}
-          onClick={() => setActiveInfoBar(i)}
-          onMouseEnter={() => setActiveInfoBar(i)}
+          onClick={() => {
+            setActiveInfoBar(i);
+            setFocus("right");
+            playConfirm();
+            window.open("https://" + ITEMS[active].links[i], "_blank");
+          }}
+          onMouseEnter={() => {
+            setActiveInfoBar(i);
+            setFocus("right");
+          }}
         >
           {ITEMS[active].newBars.includes(i) && (
             <img className="sc-info-bar-new" src={newsign} alt="" />
